@@ -1,0 +1,159 @@
+.table {
+
+	margin-bottom: 0;
+
+}
+
+table {
+	margin-top: 5rem;
+	position: relative;
+	
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 5px;
+		top: -.5rem;
+		background-color: color(secondary);
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+	}
+}
+
+
+td {
+    padding: 2rem 3.6rem!important;
+	font-size: 1.5rem;
+	color: color(label);
+	background-color: #fff;
+	vertical-align: middle !important;
+	border-top: none !important;
+
+
+	// &:nth-of-type(1) {
+	// 	border-top-left-radius: 5px;
+	// 	border-bottom-left-radius: 5px;
+	// }
+
+	// &:nth-of-type(3) {
+	// 	border-top-right-radius: 5px;
+	// 	border-bottom-right-radius: 5px;
+	// }
+
+}
+
+tbody {
+	// box-shadow: 0 1.5px 2px 1.5px rgba(0, 0, 0, 0.1);
+	// border-radius: 5px !important;
+	
+}
+
+// .table.table.table.table tbody {
+// 	//box-shadow: none;
+// 	border: none;
+	
+// } 
+
+.flex {
+	display: flex;
+	align-items: center;
+
+	& img {
+		width: 2.5rem;
+	}
+
+	
+}
+
+
+@media 
+only screen and (max-width: 772px) {
+
+	.flex {
+		display: block;
+		span {
+			display: inline-block;
+			position: relative;
+			top: .2rem;
+			margin-left: 1rem;
+		}
+	}
+
+    table {
+		margin-top: 5.5rem;
+		margin: 5.5rem auto 0;
+		margin-bottom: 6rem !important;
+    }
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+		//box-shadow: 0 0px 1px 1.5px rgba(0, 0, 0, 0.1);
+		
+	}
+	td {
+		//border-bottom: .1px solid rgba(0, 0, 0, 0.1) !important;
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { //border: 1px solid #ccc; 
+		
+	}
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		font-size: 1.7rem; //////1.6
+		position: relative;
+        padding-left: 50%; 
+		text-align: right;
+		padding: 2rem 2rem !important;
+		
+		// @include smallest-v4 {
+		// 	font-size: 1.5rem;
+		// }
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		left: 2.3rem;
+		top: 2rem;
+		color: color(dark-grey);
+		font-weight: 600;
+		width: 25%; 
+		padding-right: 10px; 
+        white-space: nowrap;
+        text-align: left;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Wallet"; margin-top: .35rem;}
+
+	td:nth-of-type(2):before { content: "Wallet Amount in BTC"; 
+	
+	@include smallest-v3 {
+		content: "Amount in BTC";
+	}
+	
+	}
+
+	td:nth-of-type(3):before { content: "Wallet Amount in USD";
+		
+		@include smallest-v3 {
+			content: "Amount in USD";
+		}
+	
+	}
+}
+

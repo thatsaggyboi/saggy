@@ -1,0 +1,588 @@
+/*Edit-Add Merchant CSS*/
+/* Style the list */
+.breadcrumb {
+    padding: 16px 5px;
+    background-color: transparent;
+    padding: 5rem 0 3rem;
+    margin-bottom: 0;
+
+    /* Display list items side by side */
+
+    &__item {
+        display: inline;
+        font-size: 1.7rem;
+
+        /* Add a slash symbol (/) before/behind each list item */
+
+        & + li:before {
+            padding: 8px;
+            color: black;
+            content: ">";
+        }
+
+        @include medium {
+            font-size: 1.5rem;
+        }
+
+        @include smallest-v2 {
+            font-size: 1.7rem;
+        }
+    }
+
+    /* Add a color to all links inside the list */
+
+    &__link {
+        color: color(primary);
+    }
+}
+
+.Basic-info {
+    padding: 3rem;
+    padding-bottom: 6rem;
+    box-shadow: 0 5px 8px 0 #00000038;
+    border-radius: 5px;
+
+    & .btn-upload {
+        background-color: color(body-bg);
+        border-radius: 0px;
+        color: black;
+        border: 1px solid #ccc;
+        background: #fafbfc;
+        font-size: 14px;
+        width: 100px;
+        height: 100px;
+        padding: 25px 0 15px 0;
+        margin-left: 29px; 
+
+        @include small-v2 {
+            margin-left: 29px;
+        }
+    }
+
+    & .uploadtext {
+        color: color(dark-grey);
+        font-weight: normal;
+        margin-top: .6rem;
+    }
+
+    label {
+        font-size: 1.8rem;
+        position: relative;
+
+        @media (max-width: 1645px) {
+            font-size: 1.6rem;
+        }
+
+        @include largest {
+            font-size: 1.8rem;
+        }
+
+        @media (max-width: 1037px) {
+            font-size: 1.6rem;
+        }
+
+        @include medium {
+            font-size: 1.5rem;
+        }
+
+        @include smallest-v2 {
+            font-size: 1.7rem;
+        }
+       
+    }
+
+    input,
+    select {
+        border-bottom: 1px solid #ccc;
+        width: 90%;
+        font-size: 1.8rem;
+        transition: all .6s;
+
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid #000;
+        }
+
+        @media (max-width: 1645px) {
+            font-size: 1.6rem;
+        }
+
+        @include largest {
+            font-size: 1.8rem;
+        }
+
+        @media (max-width: 1037px) {
+            font-size: 1.6rem;
+        }
+
+        @include medium {
+            font-size: 1.5rem;
+        }
+
+        @include small-v2 {
+            width: 100%;
+        }
+
+        @include smallest-v2 {
+            font-size: 1.7rem;
+        }
+    }
+
+    .visibility.visibility {
+        visibility: hidden;
+
+        @include small-v2 {
+            display: none;
+        }
+    }
+
+    .form-group {
+        display: grid;
+        grid-template-columns: 32% 68%; // 32 68
+
+        @include largest {
+            grid-template-columns: 28% 72%;
+        }
+
+        @media (max-width: 869px) {
+            grid-template-columns: 40% 60%;
+        }
+
+        @include small-v2 {
+            grid-template-columns: 25% 75%;
+        }
+
+        @media (max-width: 649px) {
+            grid-template-columns: 31% 69%;
+        }
+
+        @include smallest-v2 {
+            grid-template-columns: 1fr;
+            row-gap: 1rem;
+        }
+    }
+
+    .form-group-2 {
+        display: grid;
+        grid-template-columns: 15% 5% 80%;
+        align-items: center;
+        grid-column: 1 / -1; 
+
+        input[type="checkbox"]{
+            width: 20px; 
+            height: 20px; 
+            margin-left: 1rem; 
+
+            @include largest {
+                margin-left: .3rem;
+            }
+
+            @include small-v2 {
+                margin-left: 0;
+                margin-top: 0.6rem;
+
+            }
+        }
+
+        label {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 869px) {
+            grid-template-columns: 19% 5% 76%;
+        }
+
+        @include medium {
+            grid-template-columns: 25% 5% 70%;
+        }
+
+        @media (max-width: 667px) {
+            grid-template-columns: 35% 10% 55%;
+            align-items: start;
+        }
+
+        @include smallest-v2 {
+            grid-template-columns: 1fr;
+            row-gap: 1rem;
+        }
+    }
+
+    .form-group-3 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        input {
+            width: 100%;
+        }
+
+        @include large {
+            grid-template-columns: 20% 80%;
+        }
+
+        @include medium {
+            grid-template-columns: 30% 70%;
+        }
+
+        @media (max-width: 649px) {
+            grid-template-columns: 40% 60%;
+        }
+
+        @include smallest-v2 {
+            grid-template-columns: 1fr;
+            row-gap: 1rem;
+        }
+
+
+    }
+
+    .form-group-4 {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        input {
+            width: 100%;
+            
+        }
+
+        .selectres {
+            align-self: flex-end;
+            width: 100%;
+        }
+
+        p {
+            grid-column: 1 / -1;
+            text-align: right;
+            margin-top: 2.1rem;
+            margin-bottom: 0;
+
+            @media (max-width: 1437px) {
+                text-align: left;
+            }
+        }
+
+        @include large {
+            grid-template-columns: 25% 75%;
+        }
+
+        @include medium {
+            grid-template-columns: 30% 70%;
+        }
+
+        @media (max-width: 649px) {
+            grid-template-columns: 40% 60%;
+        }
+
+        @include smallest-v2 {
+            grid-template-columns: 1fr;
+            row-gap: 1rem;
+        }
+
+        &--change {
+            @include largest {
+                grid-template-columns: 65% 35%;
+            }
+
+            @media (max-width: 869px) {
+                grid-template-columns: 60% 40%;
+            }
+
+            @include small-v2 {
+                grid-template-columns: 30% 70%;
+            }
+
+            @media (max-width: 649px) {
+                grid-template-columns: 40% 60%;
+            }
+
+            @include smallest-v2 {
+                grid-template-columns: 1fr;
+                row-gap: 1rem;
+            }
+            
+        }
+
+        .d-block {
+            @include smallest-v2 {
+                display: inline-block !important;
+            }
+        }
+
+    }
+
+    .inner-form-group {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 2rem;
+
+        &--block {
+            grid-template-columns: 1fr;
+        }
+
+        @include small-v2 {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .checkbox-group {
+        display: flex;
+        flex-wrap: wrap;
+
+        & .check-box-label{
+            flex: 1 0 33%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 2.4rem;
+
+
+            input[type="checkbox"]{
+                width: 20px; 
+                height: 20px; 
+                margin-right: 2rem;
+                color: black;
+
+                @include medium {
+                    margin-right: 0;
+                }
+            }
+
+            @include largest {
+                flex: 1 0 50%;
+            }
+
+            @include medium {
+                flex: 1 0 33%;
+                justify-content: space-between;
+
+                &:nth-of-type(4),
+                &:nth-of-type(5),
+                &:nth-of-type(6) {
+                    margin-bottom: 0;
+                }
+
+                @include smallest-v3 {
+                    &:nth-of-type(4) {
+                        margin-bottom: 2.4rem;
+                    }
+                }
+            }
+
+            @include smallest-v3 {
+                flex: 1 0 50%;
+            }
+        }
+    }
+
+    .api-group {
+        display: flex;
+        margin: 1.2rem 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__text {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+
+            @include medium {
+                font-size: 1.5rem;
+            }
+
+            @include smallest-v2 {
+                font-size: 1.7rem;
+            }
+        }
+
+        &__btn {
+            background-color: #000;
+            color: white;
+            font-size: 1.65rem;
+            border-radius: 5px;
+            padding: .5rem 3rem;
+
+            @media (max-width: 869px) {
+                font-size: 1.5rem;
+                padding: .5rem 2rem;
+            }
+
+           
+            @include smallest-v2 {
+                font-size: 1.65rem;
+                padding: .5rem 3rem;
+            }
+        }
+
+        @include small-v2 {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+    }
+
+    @include smallest-v2 {
+        padding: 2.5rem;
+        padding-top: 4rem;
+    }
+
+
+}
+
+.withdrawal-details {
+    padding-bottom: 4rem;
+
+    @include largest {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    @include medium {
+        margin: 0 !important;
+    }
+
+    @include small-v2 {
+        margin-top: 3rem !important;
+    }
+}
+
+.Basic-info-0 {
+    @media (max-width: 1437px) {
+        height: 100%;
+    }
+
+    @include largest {
+       padding-top: 4rem;
+       padding-bottom: 4rem;
+    }
+}
+
+.Basic-info-1 {
+    height: calc(100% - 6rem);
+    @include largest {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+     }
+}
+
+.Basic-info-2 {
+    height: calc(100% - 6rem);
+    @include largest {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    @include medium {
+        margin-top: 0 !important;
+        height: 100%;
+    }
+
+    
+}
+
+.Public-info {
+
+    @include largest {
+        height: calc(100% - 3rem);    
+    }
+
+    @include large {
+        padding-bottom: 4rem;
+        margin-bottom: 0 !important;
+    }
+    
+}
+
+.Public-info,
+.Login-info {
+    @include largest {
+        margin-top: 3rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+.sidebar.active1 + .content label {
+    // @media (max-width: 1645px) {
+    //     font-size: 1.8rem;
+    // }
+}
+
+// .drp-user {
+//     @include small-v2 {
+//         display: none !important;
+//     }
+// }
+
+.dropdown--change1 {
+    display: none;
+
+    @include small-v2 {
+        display: initial;
+    }
+}
+
+.dropdown--change2 {
+    @include small-v2 {
+        display: none;
+    }
+}
+
+.col-md-4 {
+    &--change1 {
+        @include medium {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    &--change2 {
+        @include medium {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        @include small-v2 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+select {
+    background-color: #fff;
+}
+
+input[type="time"], 
+input[type="date"] {
+    background-color: #fff;
+}
+
+.btn-save {
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    padding: 2rem 6rem;
+    margin-bottom: 6rem;
+    border-radius: 5px;
+
+    @include medium {
+        font-size: 1.5rem;
+        padding: 1.5rem 4rem;
+        margin-top: 2.6rem;
+        margin-bottom: 0;
+    }
+
+    @include small-v2 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @include smallest-v2 {
+        width: 100%;
+        margin-top: 3rem;
+        font-size: 1.7rem;
+    }
+}
+  
+  
+  
+  
+
+  

@@ -1,0 +1,178 @@
+.wallets,
+.api {
+    display: flex;
+    align-items: center;
+
+    &__detail {
+        width: 80%;
+
+        @include large {
+            width: 100%;
+        }
+    }
+
+    &__header {
+        font-size: 1.9rem;
+        font-size: bold;
+        margin-bottom: 20px;
+
+        @include medium {
+            font-size: 1.5rem;
+        }
+
+        @include smallest-v2 {
+            font-size: 1.7rem;
+        }
+    }
+
+    &__key {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .8rem 1.2rem;
+        background-color: color(body-bg);
+        border-radius: 5px;
+        
+        input {
+            border-bottom: none;
+            width: 70%;
+            font-size: 1.8rem;
+            background-color: transparent;
+            text-overflow: ellipsis;
+            @include medium {
+                font-size: 1.5rem;
+            }
+            @include smallest-v2 {
+                font-size: 1.7rem;
+            }
+        }
+
+        .fa-clone {
+            color: color(dark-grey);
+        }
+
+    }
+  
+}
+
+.api {
+
+    &__detail {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+
+        @include smallest-v2 {
+            width: 70%;
+        }
+    }
+}
+
+.Basic-info-11 {
+    @include largest {
+        height: calc(100% - 3rem);
+    }
+
+    @include large {
+
+        .wallets__header {
+            margin-top: 2rem;
+        }
+
+        .wallets {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    @include smallest-v2 {
+        height: initial;
+        margin-bottom: 0 !important; 
+    }
+}
+
+.Basic-info-22 {
+    margin-bottom: 0 !important;
+
+    @include largest {
+        height: initial;
+    }
+
+    @media (max-width: 869px) {
+        height: calc(100% - 3rem);
+    }
+
+    @include medium {
+        margin-top: 3rem !important;
+    }
+}
+
+
+
+.withdrawal-details-1 {
+    height: calc(100% - 6rem);
+
+    @include largest {
+        height: calc(100% - 3rem);
+    }
+
+    @include medium {
+        margin-top: 3rem !important;
+    }
+}
+
+.Login-info-1 {
+    padding-bottom: 3rem !important;
+
+    p {
+        margin-top: 1rem !important; 
+
+        @include small-v2 {
+            margin-top: 2rem !important;
+        }
+    }
+
+    @include largest {
+        padding-bottom: 4rem !important;
+    }
+}
+
+.Basic-info-00 {
+    height: 100%;
+}
+
+.btn-edit {
+    @include largest {
+        margin-top: 3rem;
+    }
+}
+
+.col-md-4--change11 {
+    @include medium {
+        flex: 1 0 50% !important;
+        max-width: 50% !important;
+    }
+
+    @include small-v2 {
+        flex: 1 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+.col-md-4--change222 {
+    @include medium {
+        flex: 1 0 100% !important;
+        max-width: 100% !important;
+
+        .form-group-4 {
+            grid-template-columns: 30% 70%;
+
+            @include smallest-v2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+

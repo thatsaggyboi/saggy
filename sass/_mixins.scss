@@ -1,0 +1,75 @@
+////////////////////////////////////////
+// MEDIA QUERIES FOR RESPONSIVE LAYOUT
+
+@mixin largest1 {
+    @media (max-width: #{$bp-largest1}) {
+        @content;
+    }
+}
+
+@mixin largest {
+    @media (max-width: #{$bp-largest}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (max-width: #{$bp-large}) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (max-width: #{$bp-medium}) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (max-width: #{$bp-small}) {
+        @content;
+    }
+}
+
+@mixin small-v2 {
+    @media (max-width: #{$bp-small-v2}) {
+        @content;
+    }
+}
+
+@mixin small-v3 {
+    @media (max-height: #{$bp-small-v3}) {
+        @content;
+    }
+}
+
+@mixin smallest {
+    @media (max-width: #{$bp-smallest}) {
+        @content;
+    }
+}
+
+@mixin smallest-v2 {
+    @media (max-width: #{$bp-smallest-v2}) {
+        @content;
+    }
+}
+
+@mixin smallest-v3 {
+    @media (max-width: #{$bp-smallest-v3}) {
+        @content;
+    }
+}
+
+@mixin smallest-v4 {
+    @media (max-width: #{$bp-smallest-v4}) {
+        @content;
+    }
+}
+
+@mixin smallest-v5 {
+    @media (max-width: #{$bp-smallest-v5}) {
+        @content;
+    }
+}
+

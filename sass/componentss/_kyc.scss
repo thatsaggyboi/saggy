@@ -1,0 +1,311 @@
+.wrapper-1 {
+    padding: 0 3rem;
+   
+
+    .search__button {
+        margin-left: -1rem;
+        position: relative;
+        z-index: 0;
+    }
+
+    .user-management__add-new {
+        margin-left: 3rem;
+        position: relative;
+        cursor: pointer;
+        
+        @include smallest {
+            z-index: -1;
+        }
+        
+
+        .add {
+            color: black;
+            font-size: 1.5rem;
+
+            @include smallest-v2 {
+                font-size: 1.65rem;
+            }
+        }
+
+        @media (max-width: 675px) {
+            margin-left: 0;
+        }
+    }
+
+
+
+
+    .user-management .search {
+        width: 43%;
+        position: relative;
+        
+        
+
+        @include largest {
+            width: 50%;
+        }
+
+        @include medium {
+            width: 60%;
+        }
+
+        @media (max-width: 675px) {
+            width: 100%;
+            order: 1;
+        }
+
+        
+    }
+
+    .table--user-transaction::before {
+        display: none;
+    }
+
+    .user-management__search {
+        @media (max-width: 675px) {
+            display: grid;
+            row-gap: 3rem;
+        }
+    }
+
+    .search__button {
+        transition: all .6s;
+    }
+
+    .sign-in-form__input-field:focus-within > button .search__button  {
+        color: black;
+    }
+
+
+
+   
+    .table--kyc {
+        border-top: 5px solid black;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    th {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    } 
+
+    td {
+       
+       
+        .btn {
+            background-color: black;
+            padding: .5rem 1.5rem ;
+            font-size: 1.55rem;  
+
+            &:hover {
+                border-color: black;
+            }
+        }
+
+        .bg-white {
+            background-color: #fafafa !important;
+
+            &:hover {
+                border-color:#fafafa;
+            }
+        }
+    }
+
+    .table--user-transaction td {
+        padding: 2rem 1.5rem !important;
+        font-size: 1.5rem;
+
+        @include smallest-v2 {
+            padding: 2rem 2.5rem !important;
+        }
+        
+    }
+
+    .flex {
+        justify-content: center;
+        @include large {
+            justify-content: flex-end;
+            img {
+                width: 25px;
+            }
+        }
+    }
+
+    .my-col-1 {
+        width: 40rem;
+
+        @media (max-width: 1395px) {
+            width: 40%;
+        }
+
+        @include largest {
+            width: 40%;
+        }
+
+        @media (max-width: 900px) {
+            width: 42%;
+        }
+    }
+
+    .my-col-2 {
+        width: 20rem;
+
+        @media (max-width: 1601px) {
+            width: 15%;
+        }
+
+        @media (max-width: 1395px) {
+            width: 20%;
+        }
+
+        @include largest {
+            width: 20%;
+        }
+
+        @media (max-width: 900px) {
+            width: 20%;
+        }
+        
+    }
+
+    .my-col-4 {
+        width: 35rem;
+
+        @media (max-width: 1395px) {
+            width: 23%;
+        }
+
+        @include largest {
+            width: 20%;
+        }
+
+        @media (max-width: 900px) {
+            width: 20%;
+        }
+        
+    }
+
+    .my-col-5 {
+        width: 37%;  
+        @media (max-width: 1395px) {
+            width: 70%
+        } 
+
+        @include largest {
+            width: 37%; 
+        }
+
+        @media (max-width: 900px) {
+            width: 20%;
+        }
+    }
+
+    .fa-circle,
+    .fa-edit {
+        @media (max-width: 858px) {
+            margin-right: 1rem !important;
+        }
+    }
+
+    @include medium {
+        margin-bottom: 6rem;
+        table {
+           
+            margin-top: 0 !important;
+            padding-bottom: 0;
+        }
+    
+        /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr { 
+            display: block; 
+            //box-shadow: 0 0px 1px 1.5px rgba(0, 0, 0, 0.1);
+            
+        }
+        td {
+            //border-bottom: .1px solid rgba(0, 0, 0, 0.1) !important;
+        }
+        
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr { 
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        tr { //border: 1px solid #ccc; 
+            
+        }
+
+        thead {
+            border-bottom: none;
+        }
+        
+        td { 
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #eee;
+            font-size: 1.7rem !important;
+            position: relative;
+            padding-left: 50%; 
+            text-align: right;
+            padding: 2rem 2rem !important;
+            
+            // @include smallest-v4 {
+            // 	font-size: 1.5rem;
+            // }
+        }
+        
+        td:before { 
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            left: 2.3rem;
+            top: 2rem;
+            font-size: 1.7rem;
+            color: color(dark-grey);
+            font-weight: 600;
+            width: 25%; 
+            padding-right: 10px; 
+            white-space: nowrap;
+            text-align: left;
+        }
+
+        .text-medium-right {
+            text-align: right !important;
+        }
+        
+        /*
+        Label the data
+        */
+        td:nth-of-type(1):before { content: "USER ID"; margin-top: .35rem;}
+    
+        td:nth-of-type(2):before { content: "USER NAME";}
+    
+        td:nth-of-type(3):before { content: "JOINING DATE"; }
+
+        td:nth-of-type(4):before { content: "ACTIONS";}
+    }
+
+    @include small-v2 {
+        .card-dashboard__header {
+            padding: 4rem 2.5rem 0;
+        }
+    }
+
+    @include smallest-v2 {
+        padding: 0 1.5rem;
+    }
+}
+
+.fa-circle {
+    color: green;
+    font-size: 1.8rem;
+}
+
+.fa-edit,
+.fa-trash-alt {
+    color: black;
+    font-size: 1.8rem;
+}
+

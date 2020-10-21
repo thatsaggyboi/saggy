@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="UTF-8">
+    <title>Forgot Password</title>
+
+    <!--- favicon
+    ================================================== -->
+    <link rel = "icon" href ="./img/favicon.ico" type = "image/x-icon"> 
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- fontawesome
+    ================================================== -->
+
+</head>
+
+<body>
+
+    <!-- HEADER SECTION (INCL. LOGO)
+    ================================================== -->
+
+    <header class="header">
+        <a href="index.html" class="header__logo">
+          <img src="./img/Crypto Case Logo.svg" alt="Cryptocase-logo">
+        </a>
+    </header>
+
+    <!-- HERO SECTION
+    ================================================== -->
+
+    <div class="hero">
+        <div class="container">
+            <div class="heading">
+                <h2 class="heading__signin">Forgot Password</h2>
+            </div>
+            <div class="form-box form-box--forgot">
+                <form action="./reset-password.html" id="forgot" class="forgot-form">
+                    <p class="forgot-form__text">Enter the email address associated with your account, and we'll email
+                        you a link to reset your Password.</p>
+                    <label for="email-id" class="forgot-form__label">Email ID</label>
+                    <div class="forgot-form__input-field">
+                        <input type="text" class="input-field--username" id="email-id" placeholder="Email address">
+                    </div>
+                    <input type="submit" value="Submit" class="forgot-form__submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

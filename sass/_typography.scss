@@ -1,0 +1,130 @@
+////////////////////////////////////////
+// GLOBAL BUTTON STYLING
+
+.btn {
+    background-color: color(secondary);
+    outline: none;
+    border-color: transparent;
+    border-radius: .8rem;
+    font-size: 1.3rem;
+    color: color(white);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1.5rem 3.5rem;
+}
+
+
+.heading2 {
+    padding: 4rem 3.5rem 2.5rem;
+    font-size: 2rem;
+    color: color(label);
+    font-weight: 600;
+
+    @include small {
+        padding: 4rem 3.5rem 0;
+    }
+
+    @include smallest-v2 {
+        padding: 4rem 2.5rem 0;
+
+        &--big {
+            padding: 4rem 1.5rem 0;
+        }
+    }
+}
+
+////////////////////////////////////////
+// GLOBAL PARAGRAPH STYLING
+
+.text {
+    font-size: 1.6rem;
+    color: color(primary);
+    margin-bottom: .6rem;
+
+    &--footer {
+        font-size: 1.4rem;
+        color: #cccccc;
+        opacity: .7;
+        margin-bottom: 0;
+        font-weight: 600;
+      
+    }
+
+    @include smallest-v3 {
+        font-size: 1.3rem;
+    }
+}
+
+.name {
+
+}
+
+.text-light {
+    font-size: 1.5rem;
+}
+
+
+.validation-text {
+    transform: translate(1rem, -1rem);
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem;
+    color: color(invalid);
+}
+
+////////////////////////////////////////
+// EXTRA CLASSES FOR MARGIN BOTTOM
+
+.mb_sm {
+    margin-bottom: 2rem;
+}
+.mb_sm--2 {
+    margin-bottom: .7rem;
+}
+.mb_md {
+    margin-bottom: 3rem;
+}
+.mb_lr {
+    margin-bottom: 4.3rem;
+}
+.mb_hg {
+    margin-bottom: 5rem;
+}
+.mb_hg--2 {
+    margin-bottom: 6rem;
+}
+.ml {
+    margin-left: 2rem;
+
+    @include smallest-v2 {
+        margin-left: 1rem;
+    }
+}
+
+.right {
+
+    @include small-v2 {
+        display: inline-block;
+        overflow: hidden;
+        width: 35%;
+        text-overflow: ellipsis;
+        
+    }
+    
+}
+
+.block1 {
+
+    @include smallest-v3 {
+        display: block;
+    }
+    
+}
+
+.navbar--change {
+    padding-top: .5rem !important;
+}
+
+.disable-grey {
+    color: color(light-grey) !important;
+}

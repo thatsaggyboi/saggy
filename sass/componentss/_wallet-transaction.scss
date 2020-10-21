@@ -1,0 +1,288 @@
+.icon-back {
+	width: 2rem;
+	transition: all .6s;
+
+	&:hover {
+		transform: translateX(-1rem);
+	}
+}
+
+.icon-btc {
+	width: 2.7rem;
+}
+
+.icon-copy {
+	width: 1.4rem;
+	transition: all .6s;
+
+	&:hover {
+		transform: translateX(.5rem);
+	}
+
+	&--admin {
+		width: 1.6rem;
+
+		&:hover {
+			transform: translateX(0);
+		}
+	}
+
+}
+
+.icon-filter {
+	width: 1.48rem;
+}
+
+h3 {
+	font-size: 2.4rem;
+
+}
+.t-0.t-0 {
+	margin-top: 0 ;
+}
+
+.table {
+	margin-bottom: 0;
+    &--user-transaction {
+		padding: 4rem;  //4
+		//padding-top: 3rem;
+		//margin: 0;
+		margin-top: 6rem;
+		//margin-bottom: 5.5rem;
+		th {
+			padding: 0;
+			padding: 0 1.5rem 1rem;
+		}
+
+		.smalll {
+			width: 14rem;
+
+			&--admin {
+				width: 18rem;
+			}
+			
+			@include large {
+				width: 35%;
+				&--admin {
+					width: 0;
+				}
+			}
+
+			@include medium {
+				width: 100%;
+				
+			}
+			
+		}
+
+		.flex {
+			@include large {
+				display: flex;
+				column-gap: .4rem;
+
+				img {
+					width: 1.48rem;
+				}
+			}
+		}
+
+		.bigg {
+			width: 41%;
+
+			@include large {
+				width: 40%;
+			}
+
+			@include medium {
+				&--admin {
+					width: 0;
+				}
+			}
+
+			
+		}
+
+		.medium {
+			width: 13rem;
+		}
+
+		.hide {
+			@include large {
+				display: none;
+			}
+		}
+
+		.d-block {
+			color: color(light-grey);
+			font-size: 1.2rem;
+
+			@include smallest-v2 {
+				font-size: 1.5rem;
+			}
+		}
+
+		td {
+			padding: 2.5rem 1.5rem 2.5rem !important;
+			font-size: 1.5rem;
+			color: color(label);
+			background-color: #fff; 
+
+			@include small-v2 {
+				font-size: 1.7rem;
+			}
+		}
+
+		tbody {
+			tr {
+				border-bottom: 1px solid rgba(0, 0, 0, .05);
+				cursor: pointer;
+				&:nth-of-type(even) {
+					td {
+						background-color:#fafafa;
+					}
+				}
+			}
+		}
+
+		
+
+		thead {
+			border-bottom: 1px solid rgba(0, 0, 0, .25);
+			font-size: 1.4rem;		
+			color: color(light-grey);
+			font-style: normal;
+			text-align: center;
+		}
+
+		&::before {
+			transform: translateY(-3.5rem);
+			width: 108.5%;
+			left: -4.25%;
+
+			@include largest {
+				transform: translateY(-4rem);
+				width: 109.1%;
+				left: -4.6%;
+			}
+
+			@include large {
+				transform: translateY(-4rem);
+				width: 113%;
+				left: -6.5%;
+			}
+
+			@include medium {
+				transform: translateY(-4rem);
+				width: 107.6%;
+				left: -3.8%;
+			}
+
+		
+		}
+
+		@include medium {
+			padding: 4rem 2rem;
+		}
+
+		
+		
+		@media only screen and (max-width: 772px) {
+		padding: 0;
+
+		&::before {
+			width: 100%;
+			left: 0;
+			top: 4rem;
+		}
+
+		.flex {
+				display: block;
+				span {
+					display: inline-block;
+					position: relative;
+					top: .2rem;
+					margin-left: 1rem;
+				}
+			}
+		
+			table {
+				margin-top: 3rem;
+				margin-bottom: 6rem;
+			}
+		
+			/* Force table to not be like tables anymore */
+			table, thead, tbody, th, td, tr { 
+				display: block; 
+			}
+
+			tbody {
+				margin-top: 2rem;
+			}
+			
+			/* Hide table headers (but not display: none;, for accessibility) */
+			thead tr { 
+				position: absolute;
+				top: -9999px;
+				left: -9999px;
+				
+			}
+
+			
+
+			
+			
+			// tr { border: 1px solid #ccc; }
+			
+			td { 
+				/* Behave  like a "row" */
+				
+				border-bottom: 1px solid #eee; 
+				position: relative;
+				padding-left: 50%; 
+				text-align: right;
+				padding: 2rem 5.5rem !important;
+				//margin-bottom: 3rem;
+				
+			}
+			
+			td:before { 
+				/* Now like a table header */
+				position: absolute;
+				/* Top/left values mimic padding */
+				left: 5.3rem;
+				top: 2rem;
+				color: color(dark-grey);
+				font-weight: 600;
+				width: 25%; 
+				padding-right: 10px; 
+				white-space: nowrap;
+				text-align: left;
+				margin: 0;
+			}
+			
+			/*
+			Label the data
+			*/
+			td:nth-of-type(1):before { content: "DATE";}
+		
+			td:nth-of-type(2):before { content: "TO/FROM"; }
+		
+			td:nth-of-type(3):before { content: "STATUS"; vertical-align: center; }
+			td:nth-of-type(4):before { content: "AMOUNT"; }
+			td:nth-of-type(5):before { content: "BALANCE"; }
+		}
+
+		@include smallest-v2 {
+			td {
+				padding: 2rem 2.5rem !important;
+
+				&::before {
+					left: 2.5rem;
+				}
+			}
+		}
+		
+		
+    }
+}
+

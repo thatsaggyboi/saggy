@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="user-wallet" lang="en">
+
+<head>
+  <!--- basic page needs
+    ================================================== -->
+  <meta charset="UTF-8">
+  <title>Transaction Details</title>
+
+    <!--- favicon
+    ================================================== -->
+    <link rel = "icon" href ="./img/favicon.ico" type = "image/x-icon"> 
+
+  <!-- mobile specific metas
+    ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!-- CSS
+    ================================================== -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="small">
+
+  <!-- HEADER SECTION (INCL. LOGO)
+    ================================================== -->
+
+  <header class="header header--left">
+    <div class="container container--small d-flex">
+      <a href="./user-wallet.html" class="header__logo">
+        <img src="./img/Crypto Case Logo.svg" alt="Cryptocase-logo">
+      </a>
+      <nav class="navbar navbar--change ml-auto">
+        <ul class="navbar__item d-flex align-items-center">
+          <li class="navbar__link">
+            <p class="name text-light mb-0">sagar ajmeri</p>
+          </li>
+          <li class="navbar__link ml">
+            <img src="./img/nav-toggle.svg " alt="nav-toggle" data-toggle="dropdown" class="input-icon dropdown-toggle">
+            <ul class="dropdown-menu">
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- WALLET HEADER (INCL. NAME AND BALANCE)
+    ================================================== -->
+
+  <div class="wallet-header wallet-header--user-transaction d-flex align-items-center">
+    <div class="container container--small">
+      <div class="wallet-header__title wallet-header__title--user--transaction d-flex align-items-center">
+        <div class="wallet-header__heading d-flex align-items-center">
+          <img src="./img/back.svg" alt="bitcoin-btc" class="icon-back">
+          <img src="./img/btc-icon.svg" alt="bitcoin-btc" class="icon-btc ml-3">
+          <h3 class="ml-2">BTC Wallet</h3>
+          <img src="./img/copy.svg" alt="copy-text" class="icon-copy ml-3">
+        </div>
+        <h2 class="wallet-header__amount ml-auto">0.45 BTC<span class="d-flex justify-content-end">$2.95</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABVIEW 
+    ================================================== -->
+
+  <div class="tabs bg-white">
+    <div class="container container--small">
+      <ul class="tab-view nav nav-pills mb-3 d-flex" id="pills-tab" role="tablist">
+        <li class="nav-item auto">
+          <a class="nav-link active tablink--user-big tablink pb-0" id="pills-transaction-tab" data-toggle="pill"
+            href="#pills-transaction" role="tab" aria-controls="pills-transaction" aria-selected="true">Transactions</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- USER-TRANSACTION DETAILS
+    ================================================== -->
+
+  <div class="container container--small">
+    <div class="details__box bg-white">
+      <h2 class="heading2 heading2--big">Transaction Details</h2>
+      <form action="" class="">
+        <div class="transaction">
+          <label for="">Transaction Time</label>
+          <p>08 Sep, 2020 <span class="block1">10:30 AM</span></p>
+          <label for="">Transaction ID</label>
+          <p>2020001</p>
+          <label for="">Currency</label>
+          <p>Bitcoin BTC</p>
+          <label for="">Amount</label>
+          <p>0.18 BTC</p>
+          <label for="">Amount USD</label>
+          <p>$2000</p>
+          <label for="">From Address</label>
+          <p>skfmkkdfkn</p>
+          <label for="">To Address</label>
+          <p>dngamglkkmsafsfasfa</p>
+          <label for="">Transaction Hash</label>
+          <p>defhhfhiwhiejrsafasffa</p>
+          <label for="">Gas Fee (if any)</label>
+          <p>0.00</p>
+          <label for="">Status</label>
+          <p>Succesful</p>
+          <input type="submit" value="Back" class="send__submit">
+        </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="user-wallet" lang="en">
+
+<head>
+  <!--- basic page needs
+    ================================================== -->
+  <meta charset="UTF-8">
+  <title>User Wallet</title>
+
+    <!--- favicon
+    ================================================== -->
+    <link rel = "icon" href ="./img/favicon.ico" type = "image/x-icon"> 
+
+  <!-- mobile specific metas
+    ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!-- CSS
+    ================================================== -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER SECTION (INCL. LOGO)
+    ================================================== -->
+
+  <header class="header header--left">
+    <div class="container container--small d-flex">
+      <a href="./user-wallet.html" class="header__logo">
+        <img src="./img/Crypto Case Logo.svg" alt="Cryptocase-logo">
+      </a>
+      <nav class="navbar navbar--change ml-auto">
+        <ul class="navbar__item d-flex align-items-center">
+          <li class="navbar__link">
+            <p class="name text-light mb-0">sagar ajmeri</p>
+          </li>
+          <li class="navbar__link ml">
+            <img src="./img/nav-toggle.svg " alt="nav-toggle" data-toggle="dropdown" class="input-icon dropdown-toggle">
+            <ul class="dropdown-menu">
+              <li><a href="./admin-dashboard.html">Admin</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- WALLET HEADER (INCL. NAME AND BALANCE)
+    ================================================== -->
+
+  <div class="wallet-header d-flex align-items-center">
+    <div class="container container--small">
+      <div class="wallet-header__title d-flex align-items-center">
+        <div class="wallet-header__heading">
+          <h2>Wallets</h2>
+        </div>
+        <h2 class="wallet-header__amount ml-auto">$3.05<span class="d-flex">Total value</span></h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- WALLET TABLE
+    ================================================== -->
+
+  <div class="container container--small mb_hg--2">
+    <a href="./user-transaction.html">
+      <table class="table table-striped mb_hg--2">
+        <tbody>
+          <tr>
+            <td class="flex">
+              <img src="./img/btc-icon.svg" alt="bitcoin-btc">
+              <span class="ml-3">BTC Wallet</span>
+            </td>
+            <td class="text-right">0.00028176 BTC</td>
+            <td class="font-weight-bold text-right">$3.05</td>
+          </tr>
+        </tbody>
+      </table>
+    </a>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

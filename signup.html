@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+
+    <!--- favicon
+    ================================================== -->
+    <link rel = "icon" href ="./img/favicon.ico" type = "image/x-icon"> 
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER SECTION (INCL. LOGO)
+    ================================================== -->
+
+    <header class="header">
+        <a href="index.html" class="header__logo">
+          <img src="./img/Crypto Case Logo.svg" alt="Cryptocase-logo">
+        </a>
+    </header>
+
+    <!-- HERO SECTION
+    ================================================== -->
+
+    <div class="hero">
+        <div class="container">
+            <div class="form-box form-box--signup">
+                <form action="./index.html" id="sign-in" class="sign-up-form sign-up-form--signup">
+                    <p class="sign-up-form__text">Create a <span>Pay As You Go</span> hot wallet now. No contract
+                        required.</p>
+                    <label for="email-id" class="sign-up-form__label sign-up-form__label--signup">First Name</label>
+                    <div class="sign-up-form__input-field mb_sm--2">
+                        <input type="text" class="input-field--username" id="email-id" placeholder="First Name">
+                    </div>
+                    <label for="password" class="sign-up-form__label">Last Name</label>
+                    <div class="sign-up-form__input-field sign-up-form__input-field--password mb_sm--2">
+                        <input type="password" class="input-field--password" id="password" placeholder="Last Name">
+                    </div>
+                    <label for="password" class="sign-up-form__label">Email Address</label>
+                    <div class="sign-up-form__input-field sign-up-form__input-field--password mb_sm--2">
+                        <input type="password" class="input-field--password" id="password" placeholder="Email Address">
+                    </div>
+                    <label for="password" class="sign-up-form__label">Country</label>
+                    <div class="sign-up-form__input-field sign-up-form__input-field--password mb_sm--2">
+                        <!-- <input type="password" class="input-field--password" id="password" placeholder="Country"> -->
+                        <select class="select-css">
+                            <!-- <option>Country</option>
+                            <option>India</option>
+                            <option>Australia</option>
+                            <option>USA</option> -->
+                            <option>Australia</option>
+                        </select>
+                    </div>
+                    <label for="region" class="sign-up-form__label">Region</label>
+                    <div class="sign-up-form__input-field sign-up-form__input-field--region mb_sm--2">
+                        <!-- <input type="password" class="input-field--password" id="password" placeholder="Country"> -->
+                        <select class="select-css">
+                            <option>Australian Capital Territory</option>
+                            <option>New South Wales</option>
+                            <option>Northern Territory</option>
+                            <option>Queensland</option>
+                            <option>South Australia</option>
+                            <option>Tasmania</option>
+                            <option>Victoria</option>
+                            <option>Western Australia</option>
+                        </select>
+                    </div>
+                    <label for="password" class="sign-up-form__label">Password</label>
+                    <div class="sign-up-form__input-field sign-up-form__input-field--password">
+                        <input type="password" class="input-field--password" id="password" placeholder="Password">
+                    </div>
+                    <div class="password-strength mb_sm--2">
+                        <span class="bar"></span>
+                    </div>
+                    <label for="password" class="sign-up-form__label sign-up-form__label--signup">Confirm
+                        Password</label>
+                    <div
+                        class="sign-up-form__input-field sign-up-form__input-field--password sign-up-form__input-field--signup">
+                        <input type="password" class="input-field--password" id="password"
+                            placeholder="Confirm Password">
+                    </div>
+                    <input type="submit" value="Submit" class="sign-up-form__submit sign-up-form__submit--signup">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

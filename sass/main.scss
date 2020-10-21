@@ -1,0 +1,23 @@
+////////////////////////////////////////
+// MAIN SCSS FILE THAT CONTAIN ALL THE LAYOUTSS, BASE, TYPOGRAPHY ETC....
+
+@import "./variables";
+@import "./functions";
+@import "./mixins";
+
+@import "./base";
+@import "./typography";
+
+@import "./componentss/header";
+@import "./componentss/hero";
+@import "./componentss/wallet-table";
+@import "./componentss/wallet-transaction";
+@import "./componentss/transcation-detail";
+@import "./componentss/user-management";
+
+
+@import "./componentss/admin-dashboard";
+@import "./componentss/kyc";
+@import "./componentss/add-users";
+@import "./componentss/edit-user";
+// @import "./componentss/footer";

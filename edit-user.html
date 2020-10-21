@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html class="admin-1">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Edit User</title>
+
+    <!--- favicon
+    ================================================== -->
+    <link rel = "icon" href ="./img/favicon.ico" type = "image/x-icon"> 
+   <!-- Bootstrap CSS CDN -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!-- Our Custom CSS -->
+   <link rel="stylesheet" href="./css/style.css">
+
+   <!-- Font Awesome JS -->
+   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="admin-1">
+   <div class="wrapper wrapper--noflex">
+      <!-- Sidebar  -->
+      <nav id="sidebar" class="sidebar sidebar--kyc">
+         <div class="sidebar__header">
+            <img src="./img/Crypto Case Logo-Black.svg" alt="Cryptocase-logo">
+         </div>
+         <ul class="list-unstyled sidebar__links">
+            <li class="sidebar__item">
+               <a class="sidebar__link" href="./admin-dashboard.html">
+                  <i class="fas fa-tachometer-alt icon"></i>
+                  <span class="item">Dashboard</span>
+               </a>
+            </li>
+            <li class="active sidebar__item">
+               <a class="sidebar__link" href="./kyc.html">
+                  <i class="fas fa-users-cog icon"></i>
+                  <span class="item">Manage Users</span>
+               </a>
+            </li>
+         </ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="content">
+         <nav class="navbar navbar-expand-md">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+               <span><i class="fa fa-angle-left"></i></span>
+            </button>
+            <div class="dropdown dropdown--change1 bellnoti ml-auto mt-2 mr-5">
+               <a href="#" data-toggle="dropdown">
+                  <i class="far fa-bell"></i>
+                  <div class="badge">
+                     <span>3</span>
+                  </div>
+               </a>
+               <div class="dropdown-menu dropdown-menu-left notifications">
+                  <ul class="notification__body text-left">
+                     <li class="notification ml-5">
+                        <span class="notification__person"><strong>John Doe</strong></span>
+                        <p class="notification__text mt-2">New ticket Added</p>
+                     </li>
+                     <li class="notification ml-5 mt-4">
+                        <span class="notification__person"><strong>Joseph William</strong></span>
+                        <p class="notification__text mt-2">Prchace New Theme and make payment</p>
+                     </li>
+                     <li class="notification ml-5 mt-4">
+                        <span class="notification__person"><strong>Sara Soudein</strong></span>
+                        <p class="notification__text mt-2">currently login</p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto align-items-center">
+                  <li class="display-hide">
+                     <div class="dropdown dropdown--change2 bellnoti">
+                        <a href="#" data-toggle="dropdown">
+                           <i class="far fa-bell"></i>
+                           <div class="badge">
+                              <span>3</span>
+                           </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left notifications">
+                           <ul class="notification__body text-left">
+                              <li class="notification ml-5">
+                                 <span class="notification__person"><strong>John Doe</strong></span>
+                                 <p class="notification__text mt-2">New ticket Added</p>
+                              </li>
+                              <li class="notification ml-5 mt-4">
+                                 <span class="notification__person"><strong>Joseph William</strong></span>
+                                 <p class="notification__text mt-2">Prchace New Theme and make payment</p>
+                              </li>
+                              <li class="notification ml-5 mt-4">
+                                 <span class="notification__person"><strong>Sara Soudein</strong></span>
+                                 <p class="notification__text mt-2">currently login</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="mr-5 link-mob">
+                     <div class="collapsable-nav">
+                        <a class="align-self-start" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                           <img src="./img/profilepic.png" alt="profilepic" class="proflepic" />
+                           <span class="greeting mx-4">Hi Admin</span>
+                           <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                     </div>     
+                     <div class="collapse collapse-mob" id="collapseExample">
+                        <ul class="text-left mobo-link">
+                           <li class="ml-0 border-botop border-top ">
+                              <a href="#" class="dropdown-item">Profile</a>
+                           </li>
+                           <li class="ml-0 mt-2 border-botop">
+                              <a href="#" class="dropdown-item">My Messages</a>
+                           </li>
+                           <li class="ml-0 mt-2 mb-2 border-botop">
+                              <a href="#" class="dropdown-item">Lock Screen</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="dropdown-toggle dropdown-toggle--hide" data-toggle="dropdown" aria-expanded="false">
+                        <img src="./img/profilepic.png" alt="profilepic" class="proflepic" />
+                        <span class="greeting mx-4">Hi Admin</span>
+                     </div>
+                     <!-- <a href="#!" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"></a> -->
+                     <div class="dropdown dropdown-1 dropdown-toggle--hide drp-user">
+                        <div class="dropdown-menu dropdown-menu-right profile-notification px-0">
+                           <ul class="text-left">
+                              <li class="ml-0">
+                                 <a href="#" class="dropdown-item">Profile</a>
+                              </li>
+                              <li class="ml-0">
+                                 <a href="#" class="dropdown-item">My Messages</a>
+                              </li>
+                              <li class="ml-0">
+                                 <a href="#" class="dropdown-item">Lock Screen</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+
+         <div class="wrapper-1">
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item"><a href="./admin-dashboard.html">Home</a></li>
+                <li class="breadcrumb__item"><a href="./kyc.html">Manage Users</a></li>
+                <li class="breadcrumb__item"><a href="./add-users.html"><strong>Edit User</strong></a></li>
+            </ul>
+
+            <div class="row rowpadding">
+                <div class="col-xl-8">     
+                    <div class="Basic-info Basic-info-0 Basic-info-00 bg-white">
+                        <div class="row">
+                           <div class="col-md-12">
+                                <div class="card-form pb-5">
+                                    <div class="card-form__header d-flex justify-content-between">
+                                        <h5 class="totalmarketcaptitle">Basic Info</h5>
+                                        <div class="toggle">
+                                            <div data-toggle="collapse" data-target="#basicinfo" class="ellipsis">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                    <div id="basicinfo" class="collapse text-right">
+                                        Lorem ipsum dolor text....
+                                    </div>
+                                </div>
+                                <div class="form-group-1 mb-5">
+                                    <label for="profile">Profile Picture &nbsp;:</label>
+                                    <div class="select-picture d-inline-block">
+                                       <label class="btn btn-upload">
+                                       <img src="./img/ic_pic.png" alt="uploadpic"/>
+                                       <span class="uploadtext d-block">Upload</span>
+                                       <input type="file" class="uploadFile img" value="Upload Photo"
+                                          style="width: 0px;height: 0px;overflow: hidden;">
+                                       </label>
+                                    </div>
+                                </div>
+                                <div class="inner-form-group">
+                                    <div class="form-group">
+                                        <label for="firstname" class="txttitle">First Name &nbsp;:</label>
+                                        <input type="text" id="firstname" class="inputtxtres" value="John">
+                                     </div>
+                                     <div class="form-group">
+                                        <label for="lastname" class="txttitle">Last Name &nbsp;:</label>
+                                        <input type="text" id="lastname" class="inputtxtres" value="Smith">
+                                     </div>
+                                     <div class="form-group">
+                                        <label for="gender" class="txttitle">Gender &nbsp;:</label>
+                                        <select id="gender" class="selectres" value="male">
+                                           <option value="male">Male</option>
+                                           <option value="female">Female</option>
+                                           <option value="other">Other</option>
+                                        </select>
+                                     </div>
+                                     <div class="form-group visibility">
+                                        <label for="accountemail" class="txttitle">Account Email &nbsp;:</label>
+                                        <input type="email" id="accountemail" class="inputtxtres">
+                                     </div>
+                                     <div class="form-group">
+                                        <label for="accountemail" class="txttitle">Account Email &nbsp;:</label>
+                                        <input type="email" id="accountemail" class="inputtxtres" value="john.smith@domain.com">
+                                     </div>
+                                     <div class="form-group confirm-email">
+                                        <label for="confirmemail" class="txttitle">Confirm Email &nbsp;:</label>
+                                        <input type="email" id="confirmemail" class="inputtxtres" value="john.smith@domain.com">
+                                     </div>
+                                     <div class="form-group">
+                                        <label for="phone" class="txttitle">Phone No &nbsp;:</label>
+                                        <input type="tel" id="accountemail" class="inputtxtres" value="+61 000 000 0000">
+                                     </div>
+                                     <div class="form-group visibility">
+                                        <label for="phone" class="txttitle">Phone No</label>
+                                        <input type="tel" id="accountemail" class="inputtxtres">
+                                     </div>
+                                     <div class="form-group">
+                                        <label for="timezone" class="txttitle">Time Zone &nbsp;:</label>
+                                        <select id="timezone" class="selectres" disabled>
+                                           <option value="austrailia">Austrailia</option>
+                                           <option value="india">India</option>
+                                        </select>
+                                     </div>
+                                     <div class="form-group visibility">
+                                        <label for="timezone" class="txttitle">Time Zone &nbsp;:</label>
+                                        <select id="timezone" class="selectres" disabled>
+                                           <option value="austrailia">Austrailia</option>
+                                           <option value="india">India</option>
+                                        </select>
+                                     </div>
+                                     <div class="form-group">
+                                        <label for="dateformat" class="txttitle">Date Format &nbsp;:</label>
+                                        <input type="email" id="confirmemail" class="inputtxtres" value="05 August, 2019">
+                                     </div>  
+                                     <div class="form-group time-format">
+                                        <label for="dateformat" class="txttitle">Time Format &nbsp;:</label>
+                                        <input type="email" id="confirmemail" class="inputtxtres" value="10:02:25 AM">
+                                     </div>
+                                     <div class="form-group-2">
+                                        <label for="options" class="txttitle">Optional Emails &nbsp;:</label>
+                                        <input type="checkbox" checked="checked">
+                
+                                        <label class="optionalemail">Recieve electronic communications from Payscript.   
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    
+                </div>
+                <div class="col-xl-4 col-lg-12">
+
+                  <div class="row">
+                     <div class="col-xl-12 col-lg-6">
+                        <div class="Basic-info Public-info bg-white mb-5">
+                           <div class="row">
+                              <div class="col-md-12">
+                                   <div class="card-form pb-5">
+                                       <div class="card-form__header d-flex justify-content-between">
+                                           <h5 class="totalmarketcaptitle">Public Info</h5>
+                                           <div class="toggle">
+                                               <div data-toggle="collapse" data-target="#basicinfo" class="ellipsis">
+                                                   <i class="fas fa-ellipsis-v"></i>
+                                               </div>    
+                                           </div>
+                                       </div>
+                                       <div id="basicinfo" class="collapse text-right">
+                                           Lorem ipsum dolor text....
+                                       </div>
+                                   </div>
+                                   <div class="inner-form-group inner-form-group--block pb-4">
+                                       <div class="form-group-3">
+                                           <label for="firstname" class="txttitle">Company Name &nbsp;:</label>
+                                           <input type="text" id="firstname" class="inputtxtres" value="abc.com.au">
+                                        </div>
+                                       <div class="form-group-3">
+                                           <label for="firstname" class="txttitle">Email ID &nbsp;:</label>
+                                           <input type="text" id="firstname" class="inputtxtres" value="contact@abc.com.au">
+                                        </div>
+                                       <div class="form-group-3">
+                                           <label for="firstname" class="txttitle">Website &nbsp;:</label>
+                                           <input type="text" id="firstname" class="inputtxtres" value="www.abc.com.au">
+                                        </div>   
+                                   </div>
+                               </div>
+                           </div>
+                       </div> 
+                     </div>
+                       
+                     <div class="col-xl-12 col-lg-6">
+                        <div class="Basic-info Login-info Login-info-1 bg-white">
+                           <div class="row ">
+                              <div class="col-md-12">
+                                   <div class="card-form pb-5">
+                                       <div class="card-form__header d-flex justify-content-between">
+                                           <h5 class="totalmarketcaptitle">Login Info</h5>
+                                           <div class="toggle">
+                                               <div data-toggle="collapse" data-target="#basicinfo" class="ellipsis">
+                                                   <i class="fas fa-ellipsis-v"></i>
+                                               </div>    
+                                           </div>
+                                       </div>
+                                       <div id="basicinfo" class="collapse text-right">
+                                           Lorem ipsum dolor text....
+                                       </div>
+                                   </div>
+                                   <div class="inner-form-group inner-form-group--block">
+                                       <div class="form-group-4">
+                                           <label for="firstname" class="txttitle">Old Password &nbsp;:</label>
+                                           <input type="text" id="firstname" class="inputtxtres">
+                                       </div>
+                                       <div class="form-group-4">
+                                           <label for="firstname" class="txttitle">New Password &nbsp;:</label>
+                                           <input type="text" id="firstname" class="inputtxtres">
+                                       </div>
+                                       <div class="form-group-4">
+                                           <label for="firstname" class="txttitle">Confirm Password &nbsp;:</label>
+                                           <input type="text" id="firstname" class="inputtxtres">
+                                        </div>
+                                       <div class="form-group-4">
+                                           <label for="firstname" class="txttitle">Email Confirmations for <span class="d-block">
+                                             Sends/Withdrawls &nbsp;:</span></label>
+                                           <select id="email-confirmation" class="selectres">
+                                               <option value="austrailia">Required</option>
+                                           </select>
+                                           <p>It is not recommended to display this settings!</p>
+                                        </div>   
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                     </div>
+                  </div>
+                  
+                    
+                </div>
+            </div>
+
+            <div class="row rowpadding secondrow">
+                <div class="col-md-4 col-md-4--change1 col-md-4--change11">                   
+                    <div class="Basic-info Basic-info-1 Basic-info-11 bg-white my-5">
+                        <div class="row">
+                           <div class="col-md-12">
+                                <div class="card-form pb-5">
+                                    <div class="card-form__header d-flex justify-content-between">
+                                        <h5 class="totalmarketcaptitle">Preffered Wallet</h5>
+                                    </div>
+                                </div>
+                                <div class="wallets">
+                                   <div class="wallets__img mr-5">
+                                      <img src="./img/BTC.png" alt="btc" class="wallet__icon">
+                                   </div>
+                                   <div class="wallets__detail">
+                                      <h2 class="wallets__header">BTC Wallet</h2>
+                                      <form class="wallets__key mt-2">
+                                          <input type="text" id="btcwallet" class="btcwallet" value="6l8OUK!122UkTfrlQ542u6$T7gB76b&w4Lc29" disabled>
+                                          <a href="#"><i class="fa fa-clone" aria-hidden="true"></i></a>
+                                      </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4 col-md-4--change2 col-md-4--change22">
+                    <div class="Basic-info Basic-info-2 Basic-info-22 bg-white my-5">
+                        <div class="row">
+                           <div class="col-md-12">
+                                <div class="card-form pb-5">
+                                    <div class="card-form__header d-flex justify-content-between">
+                                        <h5 class="totalmarketcaptitle">API Key</h5>
+                                        <div class="toggle">
+                                            <div data-toggle="collapse" data-target="#basicinfo" class="ellipsis">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                    <div id="basicinfo" class="collapse text-right">
+                                        Lorem ipsum dolor text....
+                                    </div>
+                                </div>
+                                <div class="api">
+                                 <div class="api__detail">
+                                    <h2 class="api__header">API Key</h2>
+                                    <form class="api__key mt-2">
+                                        <input type="text" id="btcwallet" class="btcwallet" value="6l8OUK!122UkTfrlQ542u6$T7gB76b&w4Lc29" disabled>
+                                        <a href="#"><i class="fa fa-clone" aria-hidden="true"></i></a>
+                                    </form>
+                                    <h2 class="api__header mt-5">Private API Key</h2>
+                                    <form class="api__key mt-2">
+                                        <input type="text" id="btcwallet" class="btcwallet" value="6l8OUK!122UkTfrlQ542u6$T7gB76b&w4Lc29" disabled>
+                                        <a href="#"><i class="fa fa-clone" aria-hidden="true"></i></a>
+                                    </form>
+                                  </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4 col-md-4--change2 col-md-4--change222">
+                  <div class="Basic-info withdrawal-details withdrawal-details-1 bg-white my-5">
+                     <div class="row">
+                        <div class="col-md-12">
+                             <div class="card-form pb-5">
+                                 <div class="card-form__header d-flex justify-content-between">
+                                     <h5 class="totalmarketcaptitle">Withdrawal Details</h5>
+                                     <div class="toggle">
+                                         <div data-toggle="collapse" data-target="#basicinfo" class="ellipsis">
+                                             <i class="fas fa-ellipsis-v"></i>
+                                         </div>    
+                                     </div>
+                                 </div>
+                                 <div id="basicinfo" class="collapse text-right">
+                                     Lorem ipsum dolor text....
+                                 </div>
+                             </div>
+                             <div class="inner-form-group inner-form-group--block">
+                              
+                              <div class="form-group-4 form-group-4--change">
+                                  <label for="firstname" class="txttitle">Daily Withdrawal <span class="d-block">Limit &nbsp;:</span></label>
+                                  <input type="text" id="firstname" class="inputtxtres" value="$2000">
+                               </div>   
+                              <div class="form-group-4 form-group-4--change">
+                                  <label for="firstname" class="txttitle">Minimum Amount &nbsp;:</label>
+                                  <input type="text" id="firstname" class="inputtxtres" value="$500">
+                               </div>   
+                              <div class="form-group-4 form-group-4--change">
+                                  <label for="firstname" class="txttitle">Transaction Fees &nbsp;:</label>
+                                  <input type="text" id="firstname" class="inputtxtres" value="0.00010">
+                               </div>   
+                          </div>
+                             
+                         </div>
+                     </div>
+                 </div>
+                </div>
+             </div>
+
+             <button class="btn-save btn-edit">
+               SAVE CHANGES
+            </button>
+             
+         </div>
+
+         
+          
+      </div>  
+  </div>
+</body>
+<!--Script Links Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+   integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/d6131477cf.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+   $(document).ready(function () {
+      $('#sidebarCollapse').on('click', function () {
+         $('#sidebar').toggleClass('active1');
+      });
+   });
+</script>
+
+</html>

@@ -1,0 +1,111 @@
+.transaction {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 30% 70%;
+    //grid-template-columns: 20% 80%;
+    justify-content: center;
+    grid-row-gap: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 0 3.5rem;
+
+    @include large {
+        grid-template-columns: 40% 60%;
+    }
+
+    @include small-v2 {
+        grid-template-columns: 50% 50%;
+    }
+
+    @include small {
+        margin-top: 4.1rem;
+        grid-template-columns: 60% 40%;
+    }
+
+    @include smallest-v2 {
+        font-size: 1.55rem;
+        padding: 0 1.5rem;
+        grid-template-columns: 53% 47%;
+
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @include smallest-v5 {
+                font-size: 1.7rem;
+            }
+
+        }
+    }
+
+    @include smallest-v3 {
+        grid-template-columns: 55% 45%;
+    }
+
+    
+}
+
+.transaction label {
+    position: relative;
+    color: color(dark-grey);
+    font-weight: 700;
+
+    @include smallest-v5 {
+        font-size: 1.7rem;
+    }
+}
+
+.transaction label::after {
+    content: ":";
+    position: absolute;
+    /*left: 70%;*/
+    left: 60%;
+
+
+    @include medium {
+        left: 75%;
+    }
+
+    // @include small-v2 {
+    //     left: 75%;
+    // }
+
+    @include smallest-v4 {
+        left: 84%;
+    }
+
+    @include smallest-v5 {
+        left: 90%;
+    }
+}
+
+.transaction .send__submit {
+        @extend .sign-in-form__submit;
+        grid-column: 1 / 2;
+        justify-self: start;
+        padding: 0 3.61rem;
+        width: 50%;
+        //margin-top: 20rem;
+        margin: 0;
+        margin-bottom: 1.04rem;
+        cursor: pointer;
+
+        @include large {
+            width: 60%;
+        }
+
+        @include small {
+            width: 100%;
+            grid-column: 1 / -1;
+            margin-bottom: 4.1rem;
+        }
+
+        @include smallest-v4 {
+            margin-top: 1.4rem;
+            font-size: 1.5rem;
+        }
+}
+
+
+
+

@@ -1,0 +1,265 @@
+.header {
+    display: flex;
+    padding: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    height: 5.6rem;
+    background-color: color(primary);
+
+    &--left {
+        justify-content: start;
+    }
+
+    &__logo {
+        width: 18rem;
+        color: white;
+        font-weight: bold;
+        line-height: 2rem;
+        align-self: center;
+
+        img {
+            width: 100%;
+        }
+
+        &:hover {
+            color: white !important;
+        }
+
+        @include smallest-v2 {
+            font-size: 2rem;  // 52
+        }
+
+        @include smallest-v4 {
+            font-size: 1.6rem;
+        }
+
+        
+    }
+
+   @include smallest {
+       padding: 0;
+   }
+
+   
+}
+
+.navbar {
+    padding: 0;  
+
+    &__link {
+
+        &--hide {
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+
+    }
+}
+
+
+
+.input-icon {
+    width: 2.6rem;
+    //line-height: 2.5rem;
+}
+
+.wallet-header {
+    position: relative;
+    background-color: #fff;
+    height: 11rem;
+    color: #03597e;
+    box-shadow: 0 8px 6px -10px rgba(0, 0, 0, .1);
+    
+    &__heading {
+        h2,h3 {
+            font-weight: normal;
+            font-size: 2.5rem;
+            line-height: 2.8rem;
+            
+
+            @include smallest-v2 {
+                font-size: 2rem;
+            }
+
+        
+        }
+    }
+
+    &__amount {
+        font-size: 2.1rem;
+        text-align: right;
+        color: #03597e;
+
+        span {
+            font-size: 1.5rem;
+            margin-top: .5rem;
+            color: color(light-grey);
+        }
+
+    }
+
+    &--user-transaction {
+        height: 11.3rem;
+        box-shadow: none
+    }
+}
+
+.tabs {
+    height: 1.8rem;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+
+    &--admin {
+        height: 7rem;
+    }
+
+    @include small {
+        height: 6rem;
+    }
+
+    &--admin {
+        @include smallest-v2 {
+            height: 9rem;
+        }
+    }
+}
+
+.tab-view {
+   // column-gap: 0rem;
+   .auto {
+       margin-right: auto;
+
+       @include smallest-v2 {
+            margin-right: 0;
+        }
+   }
+
+   &--admin {
+        display: grid !important;
+        grid-template-columns: repeat(2, 50%);
+        align-items: center;
+        text-align: center;
+        
+   }
+
+   @include medium {
+        justify-content: space-between;
+   }
+
+   @include smallest-v2 {
+        display: grid !important;
+        grid-template-columns: repeat(3, 33%);
+        align-items: center;
+        text-align: center;
+
+        &--admin {
+            display: grid !important;
+            grid-template-columns: repeat(2, 50%);
+            align-items: center;
+            text-align: center;
+            
+            
+       }
+        
+   }
+
+  
+
+ 
+
+    .tablink {
+        border: none;
+        outline: none;
+        background-color: #fff;
+        font-size: 1.5rem; //1.5
+        padding: 0 1.5rem 1rem 1.5rem;
+        color: #8e9091;
+        font-weight: 500;
+        //letter-spacing: 1.3px;
+        margin-top: -1.7rem;
+
+        &--admin {
+            margin-top: 3.5rem;
+        }
+
+        @include small {
+            margin-top: 1.45rem;
+            
+        }
+
+        @include smallest-v2 {
+            font-size: 1.65rem;
+            padding: 0;
+            margin-top: 1.43rem;
+           // padding: 0 1.5rem 1rem 1.5rem;
+        }
+
+        &--admin {
+            @include smallest-v2 {
+                padding: 0;
+                margin-top: 4.8rem;
+                font-size: 1.4rem;
+            }
+        }
+
+        &--user-big {
+            @include smallest-v2 {
+                padding: 0;
+                margin-top: 1.4rem;
+                font-size: 1.65rem;
+            }
+        }
+    }
+}
+
+li {
+
+    .active {
+        position: relative;
+        // border-bottom: 4px solid #00ADEF !important;
+        color: color(secondary) !important;
+        background-color: white !important;
+
+        &:after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: .3rem;
+            left: 0;
+            bottom: -1.4rem;
+            background-color:black;
+
+            @include small {
+                bottom: -2.37rem;
+                
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    width: 100%;
+    top: 5rem;
+    //padding: 1.5rem;
+    font-size: 1.4rem;
+    color: color(label);
+    text-align: center;
+    padding: 1rem;
+    
+    //padding-left: 1rem;
+
+    .dropdown-divider {
+        border-top: 1px solid rgba(0, 0, 0, .4);
+    }
+
+    a {
+        color: black;
+        letter-spacing: .1rem;
+    }
+}
+
+
+
+

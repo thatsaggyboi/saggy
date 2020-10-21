@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!--- basic page needs
+    ================================================== -->
+  <meta charset="UTF-8">
+  
+  <title>Log in</title>
+
+  <!--- favicon
+    ================================================== -->
+  <link rel = "icon" href ="./img/favicon.ico" type = "image/x-icon"> 
+
+  <!-- mobile specific metas
+    ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!-- CSS
+    ================================================== -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER SECTION (INCL. LOGO)
+    ================================================== -->
+
+  <header class="header">
+    <a href="index.html" class="header__logo">
+      <img src="./img/Crypto Case Logo.svg" alt="Cryptocase-logo">
+    </a>
+  </header>
+
+  <!-- HERO SECTION
+    ================================================== -->
+
+  <div class="hero">
+    <div class="container">
+      <div class="heading">
+        <h2 class="heading__signin">Log in</h2>
+      </div>
+      <div class="form-box">
+        <form action="user-wallet.html" id="sign-in" class="sign-in-form">
+          <label for="email-id" class="sign-in-form__label">Email ID</label>
+          <div class="sign-in-form__input-field mb_sm--2" tabindex="-1">
+            <input type="text" class="input-field--username" id="email-id" placeholder="Email address">
+          </div>
+          <p class="validation-text">Email is required</p>
+          <label for="password" class="sign-in-form__label">Password</label>
+          <div class="sign-in-form__input-field sign-in-form__input-field--password">
+            <input type="password" class="input-field--password" id="password" placeholder="Password">
+          </div>
+          <input type="submit" value="Log in" class="sign-in-form__submit">
+        </form>
+      </div>
+      <div class="link-box">
+        <a href="./forgot.html" class="link-box__forgot-link">Forgot password?</a>
+        <a href="./signup.html" class="link-box__signup-link">Sign up</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

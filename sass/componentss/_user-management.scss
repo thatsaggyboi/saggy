@@ -1,0 +1,144 @@
+.user-management {
+
+    padding: 5rem 0 3rem;
+    display: flex;
+    align-items: center;
+
+    input {
+
+        &:focus + button > i{
+            color: color(secondary);
+        }
+    }
+
+
+    .search {
+        display: flex;
+        width: 50%;
+       // flex: 0 0 50%;
+       
+        & .search {
+            background-color: #fff;
+
+            &:focus-within {
+                outline: none;
+                color: color(secondary);
+            }
+        }
+    
+        
+        &__button {
+            border: none;
+            outline: none;
+            font-size: 1.5rem;
+            background: none;
+            color: #e5e5e5;
+            margin-left: -2rem;
+            position: relative;
+            z-index: 1;
+
+            i{
+                transition: all .6s;
+
+            }
+
+            &:hover {
+                color: color(secondary);
+            }
+
+            &:focus {
+                outline: none;
+                color: color(secondary);
+            }
+        }
+
+        @include large {
+            width: 60%;
+        }
+
+        @include small-v2 {
+            width: 71%;
+        }
+
+        @include smallest-v2 {
+            width: 100%;   
+            order: 1;
+        }
+    }
+
+    &__add-new {
+        display: flex;
+        align-items: center;
+       
+        margin-left: -22rem;  //22
+        cursor: pointer;
+        .plus-icon {
+            width: 2.4rem;
+        }
+
+        .add {
+            margin-left: 1rem;
+        }
+
+        & span {
+            font-size: 1.4rem;
+            color: color(secondary);
+
+            @include smallest-v2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @include largest {
+            margin-left: -20rem;
+        }
+
+        @include large {
+            margin-left: -14.5rem;
+        }
+
+        @include medium {
+            margin-left: -11rem;
+        }
+
+        @include small-v2 {
+            margin-left: -3rem;
+        }
+
+        @include smallest-v2 {
+            margin-left: 0rem;
+        }
+     
+    }
+
+    @include smallest-v2 {
+        // flex-direction: column;  
+        // row-gap: 2rem;
+        display: grid;
+        row-gap: 2rem;
+        align-items: center;
+        justify-items: start;
+        padding: 5rem 0 4rem;
+    }
+
+}
+
+.table {
+    @media only screen and (max-width: 772px) {
+    &--admin {
+        td {
+            font-size: 1.5rem;
+
+            
+            @include small-v2 {
+				font-size: 1.6rem;
+			}
+        }
+
+        td:nth-of-type(1):before { content: "USER NAME";}
+		td:nth-of-type(2):before { content: "WALLET ADDRESS";}
+		td:nth-of-type(3):before { content: "ACTION"; vertical-align: center; }
+
+    }
+}
+}

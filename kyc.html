@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="admin-1">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Manage Users</title>
+
+    <!--- favicon
+    ================================================== -->
+    <link rel = "icon" href ="./img/favicon.ico" type = "image/x-icon"> 
+   <!-- Bootstrap CSS CDN -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!-- Our Custom CSS -->
+   <link rel="stylesheet" href="./css/style.css">
+
+   <!-- Font Awesome JS -->
+   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="admin-1">
+   <div class="wrapper wrapper--noflex">
+      <!-- Sidebar  -->
+      <nav id="sidebar" class="sidebar sidebar--kyc">
+         <div class="sidebar__header">
+            <img src="./img/Crypto Case Logo-Black.svg" alt="Cryptocase-logo">
+         </div>
+         <ul class="list-unstyled sidebar__links">
+            <li class="sidebar__item">
+               <a class="sidebar__link" href="./admin-dashboard.html">
+                  <i class="fas fa-tachometer-alt icon"></i>
+                  <span class="item">Dashboard</span>
+               </a>
+            </li>
+            <li class="active sidebar__item">
+               <a class="sidebar__link" href="./kyc.html">
+                  <i class="fas fa-users-cog icon"></i>
+                  <span class="item">Manage Users</span>
+               </a>
+            </li>
+         </ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="content">
+         <nav class="navbar navbar-expand-md">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+               <span><i class="fa fa-angle-left"></i></span>
+            </button>
+            <div class="dropdown dropdown--change1 bellnoti ml-auto mt-2 mr-5">
+               <a href="#" data-toggle="dropdown">
+                  <i class="far fa-bell"></i>
+                  <div class="badge">
+                     <span>3</span>
+                  </div>
+               </a>
+               <div class="dropdown-menu dropdown-menu-left notifications">
+                  <ul class="notification__body text-left">
+                     <li class="notification ml-5">
+                        <span class="notification__person"><strong>John Doe</strong></span>
+                        <p class="notification__text mt-2">New ticket Added</p>
+                     </li>
+                     <li class="notification ml-5 mt-4">
+                        <span class="notification__person"><strong>Joseph William</strong></span>
+                        <p class="notification__text mt-2">Prchace New Theme and make payment</p>
+                     </li>
+                     <li class="notification ml-5 mt-4">
+                        <span class="notification__person"><strong>Sara Soudein</strong></span>
+                        <p class="notification__text mt-2">currently login</p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto align-items-center">
+                  <li class="display-hide">
+                     <div class="dropdown dropdown--change2 bellnoti">
+                        <a href="#" data-toggle="dropdown">
+                           <i class="far fa-bell"></i>
+                           <div class="badge">
+                              <span>3</span>
+                           </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left notifications">
+                           <ul class="notification__body text-left">
+                              <li class="notification ml-5">
+                                 <span class="notification__person"><strong>John Doe</strong></span>
+                                 <p class="notification__text mt-2">New ticket Added</p>
+                              </li>
+                              <li class="notification ml-5 mt-4">
+                                 <span class="notification__person"><strong>Joseph William</strong></span>
+                                 <p class="notification__text mt-2">Prchace New Theme and make payment</p>
+                              </li>
+                              <li class="notification ml-5 mt-4">
+                                 <span class="notification__person"><strong>Sara Soudein</strong></span>
+                                 <p class="notification__text mt-2">currently login</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="mr-5 link-mob">
+                     <div class="collapsable-nav">
+                        <a class="align-self-start" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                           <img src="./img/profilepic.png" alt="profilepic" class="proflepic" />
+                           <span class="greeting mx-4">Hi Admin</span>
+                           <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                     </div>     
+                     <div class="collapse collapse-mob" id="collapseExample">
+                        <ul class="text-left mobo-link">
+                           <li class="ml-0 border-botop border-top ">
+                              <a href="#" class="dropdown-item">Profile</a>
+                           </li>
+                           <li class="ml-0 mt-2 border-botop">
+                              <a href="#" class="dropdown-item">My Messages</a>
+                           </li>
+                           <li class="ml-0 mt-2 mb-2 border-botop">
+                              <a href="#" class="dropdown-item">Lock Screen</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="dropdown-toggle dropdown-toggle--hide" data-toggle="dropdown" aria-expanded="false">
+                        <img src="./img/profilepic.png" alt="profilepic" class="proflepic" />
+                        <span class="greeting mx-4">Hi Admin</span>
+                     </div>
+                     <!-- <a href="#!" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"></a> -->
+                     <div class="dropdown dropdown-1 dropdown-toggle--hide drp-user">
+                        <div class="dropdown-menu dropdown-menu-right profile-notification px-0">
+                           <ul class="text-left">
+                              <li class="ml-0">
+                                 <a href="#" class="dropdown-item">Profile</a>
+                              </li>
+                              <li class="ml-0">
+                                 <a href="#" class="dropdown-item">My Messages</a>
+                              </li>
+                              <li class="ml-0">
+                                 <a href="#" class="dropdown-item">Lock Screen</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+
+         <div class="wrapper-1">
+            <div class="user-management">
+               <form action="#" class="search user-management__search">
+                 <div class="sign-in-form__input-field search pl-4" tabindex="-1">
+                   <input type="text" class="input-field--username" id="email-id" placeholder="Search">
+                   <button class="search__button">
+                     <i class="fa fa-search search__button" aria-hidden="true"></i>
+                   </button>
+                 </div>
+                 <a class="user-management__add-new" href="./add-users.html">
+                  <img src="./img/plus.svg" alt="plus" class="plus-icon">
+                  <span class="add">Add Users</span>
+                </a>
+               </form>
+               
+             </div>
+
+              
+              <div class="table table--admin table--user-transaction table--kyc bg-white mt-0 mb_hg--2">
+                <table class="table t-0 table--user-transaction table-borderless mt-5">
+                  <div class="card-dashboard__header d-flex align-items-start">
+                     <h5 class="totalmarketcaptitle">KYC Approvals</h5>
+                     <div class="toggle">
+                        <div data-toggle="collapse" data-target="#dashboard" class="ellipsis">
+                           <i class="fas fa-ellipsis-v"></i>
+                        </div>     
+                     </div>
+                  </div>
+                  <div id="dashboard" class="collapse text-right">
+                     Lorem ipsum dolor text....
+                  </div>
+                  <thead>
+                    <tr>
+                      <th class="text-left my-col-1">
+                        <span>User ID</span>
+                      </th>
+                      <th class="text-left my-col-2">
+                        <span>User Name</span>
+                      </th>
+                      <th class="text-left my-col-4">
+                        <span>Joining Date</span>
+                      </th>
+                      <th class="text-right my-col-5">
+                        <span>Actions</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="right">
+                           6l80UK!122UkTfrlQ542u6$T7gB76b75&w4Lc29
+                        </span>
+                      </td>
+                      <td>Merchant Name 1</td>
+                      <td class="text-left text-medium-right">DD/MM/YYYY</td>
+                      <td class="text-right">
+                        <i class="fa fa-circle mr-4" aria-hidden="true"></i>
+                        <a href="edit-user.html"><i class="far fa-edit mr-4"></i></a>
+                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                        <span class="right">
+                           6l80UK!122UkTfrlQ542u6$T7gB76b75&w4Lc29
+                        </span>
+                      </td>
+                     <td>Merchant Name 2</td>
+                      <td class="text-left text-medium-right">DD/MM/YYYY</td>
+                      <td class="text-right">
+                        <i class="fa fa-circle mr-4" aria-hidden="true"></i>
+                        <a href="edit-user.html"><i class="far fa-edit mr-4"></i></a>
+                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                        <span class="right">
+                           6l80UK!122UkTfrlQ542u6$T7gB76b75&w4Lc29
+                        </span>
+                     </td>
+                     <td>Merchant Name 3</td>
+        
+                     <td class="text-left text-medium-right">DD/MM/YYYY</td>
+                     <td class="text-right">
+                        <i class="fa fa-circle mr-4" aria-hidden="true"></i>
+                        <a href="edit-user.html"><i class="far fa-edit mr-4"></i></a>
+                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                        <span class="right">
+                           6l80UK!122UkTfrlQ542u6$T7gB76b75&w4Lc29
+                        </span>
+                      </td>
+                     <td>Merchant Name 4</td>
+              
+                     <td class="text-left text-medium-right">DD/MM/YYYY</td>
+                     <td class="text-right">
+                        <i class="fa fa-circle mr-4" aria-hidden="true"></i>
+                        <a href="edit-user.html"><i class="far fa-edit mr-4"></i></a>
+                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                        <span class="right">
+                           6l80UK!122UkTfrlQ542u6$T7gB76b75&w4Lc29
+                        </span>
+                      </td>
+                     <td>Merchant Name 5</td>
+              
+                     <td class="text-left text-medium-right">DD/MM/YYYY</td>
+                     <td class="text-right">
+                        <i class="fa fa-circle mr-4 disable-grey" aria-hidden="true"></i>
+                        <a href="edit-user.html"><i class="far fa-edit mr-4"></i></a>
+                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                        <span class="right">
+                           6l80UK!122UkTfrlQ542u6$T7gB76b75&w4Lc29
+                        </span>
+                      </td>
+                     <td>Merchant Name 6</td>
+                 
+                     <td class="text-left text-medium-right">DD/MM/YYYY</td>
+                     <td class="text-right">
+                        <i class="fa fa-circle mr-4" aria-hidden="true"></i>
+                        <a href="edit-user.html"><i class="far fa-edit mr-4"></i></a>
+                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                        <span class="right">
+                           6l80UK!122UkTfrlQ542u6$T7gB76b75&w4Lc29
+                        </span>
+                      </td>
+                     <td>Merchant Name 7</td>
+                 
+                     <td class="text-left text-medium-right">DD/MM/YYYY</td>
+                     <td class="text-right">
+                        <i class="fa fa-circle mr-4" aria-hidden="true"></i>
+                        <a href="edit-user.html"><i class="far fa-edit mr-4"></i></a>
+                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                        <span class="right">
+                           6l80UK!122UkTfrlQ542u6$T7gB76b75&w4Lc29
+                        </span>
+                      </td>
+                     <td>Merchant Name 8</td>
+                 
+                     <td class="text-left text-medium-right">DD/MM/YYYY</td>
+                     <td class="text-right">
+                        <i class="fa fa-circle mr-4" aria-hidden="true"></i>
+                        <a href="edit-user.html"><i class="far fa-edit mr-4"></i></a>
+                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                     </td>
+                    </tr>
+                    
+                    
+                    
+                  </tbody>
+                </table>
+              </div>
+         </div>    
+      </div>  
+  </div>
+</body>
+<!--Script Links Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+   integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/d6131477cf.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+   $(document).ready(function () {
+      $('#sidebarCollapse').on('click', function () {
+         $('#sidebar').toggleClass('active1');
+      });
+   });
+</script>
+
+</html>
